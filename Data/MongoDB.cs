@@ -17,7 +17,7 @@ namespace FirstApiMongo.Data
                 var client = new MongoClient(settings);
 
                 Database = client.GetDatabase(configuration["NomeBanco"]);
-                //MapClasses();
+                MapClasses();
             }
             catch (Exception ex)
             {
